@@ -1,0 +1,365 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+header .logo {
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/images/museum-background.svg'); /* Agrega tu imagen de fondo aquí */
+    background-size: cover;
+    color: #fff;
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .highlight {
+    color: #e94e1b;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cta-buttons {
+    margin-top: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.btn-primary {
+    background-color: #e94e1b;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* How It Works Section */
+#how-it-works {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.how-it-works-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen */
+}
+
+.phone-image {
+    width: 100%; /* Asegúrate de que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.how-it-works-content {
+    flex: 2;
+    padding-left: 2rem; /* Espacio entre la imagen y el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las tarjetas */
+}
+
+#how-it-works h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.step {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 600px; /* Establece un ancho específico para las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.step h3 {
+    color: #e94e1b;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    color: #555;
+}
+
+/* Use Cases Section */
+#use-cases {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#use-cases h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.use-cases-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.use-case {
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.use-case h3 {
+    color: #e94e1b;
+    margin-bottom: 1rem;
+}
+
+.use-case p {
+    color: #555;
+}
+.cta-button {
+    margin-top: 2rem;
+}
+
+.cta-button .btn-primary {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #e94e1b; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+/* Share & Export Section */
+#share-export {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#share-export h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+#share-export p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    margin: 0 1rem;
+}
+
+.social-icon img {
+    width: 40px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Who Is It For Section */
+#who-is-it-for {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#who-is-it-for h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.who-is-it-for-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Mosaico adaptable */
+    gap: 2rem; /* Espacio entre las tarjetas */
+}
+
+.audience {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left; /* Texto a la izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.audience-image {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.audience h3 {
+    color: #e94e1b;
+    margin: 1rem 0;
+}
+
+.audience p {
+    color: #555;
+}
+
+/* Pricing Section */
+#pricing {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#pricing h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-plan {
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 280px; /* Ajusta el ancho según sea necesario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #e94e1b;
+    margin: 1rem 0;
+}
+
+.pricing-plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-plan li {
+    margin: 0.5rem 0;
+}
+
+.pricing-plan a {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 2rem;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    padding: 1rem;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 1rem;
+}
+
+.footer-right h3, .footer-left h2 {
+    margin-bottom: 1rem;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin: 0.5rem 0;
+}
+
+.footer-right a {
+    color: #e94e1b;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
